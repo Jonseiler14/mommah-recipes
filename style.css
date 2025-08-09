@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(0, 145, 145);
+    color: white;
+    font-family: Snell Roundhand, sans-serif, 'Times New Roman';
+    word-spacing: 0.6rem;
+    border-bottom: 2px solid rgb(145, 61, 165);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.251);
+}
+
+
+
+.title {
+    font-size: 4rem;
+    display: flex;
+    justify-self: center;
+    padding-top: 1rem;
+}
+
+.verse {
+    display: flex;
+    justify-content: end;
+    padding-right: 5rem;
+   
+}
