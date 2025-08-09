@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-self: center;
     padding-top: 1rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.372);
 }
 
 .verse {
