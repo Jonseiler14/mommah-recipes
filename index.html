@@ -14,5 +14,25 @@
              <div class="title">Momma H Recipes</div>
              <div class="verse">Acts 2:46</div>
             </div>    
+
+
+            <input type="text" id="searchBar" placeholder="Search recipes...">
+            <script>
+                document.getElementById('searchBar').addEventListener('input', function() {
+                    const filter = this.value.toLowerCase();
+                    const recipes = document.querySelectorAll('.recipelist > *');
+
+                    recipes.forEach(recipe => {
+                        const text = recipe.textContent.toLowerCase();
+                        recipe.style.display = text.includes(filter) ? '' : 'none';
+                    }); 
+                });
+            </script>
+
+
+            <ul class="recipelist">
+                <li>Lasagna</li>
+                <li>Brownie</li>
+            </ul>
 </body>
 </html>
