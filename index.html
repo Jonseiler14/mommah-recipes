@@ -17,15 +17,15 @@
 
 
             <input type="text" id="searchBar" placeholder="Search recipes...">
-            <script>
+           <script>
                 document.getElementById('searchBar').addEventListener('input', function() {
                     const filter = this.value.toLowerCase();
 
-    // Grab all category headings
+    
                     const categories = document.querySelectorAll('.category');
 
                     categories.forEach(category => {
-                        const recipeList = category.nextElementSibling; // the <ul> right after the category
+                        const recipeList = category.nextElementSibling; 
                         const recipes = recipeList.querySelectorAll('li');
 
                         let hasMatch = false;
@@ -40,7 +40,7 @@
                             }
                          });
 
-        // Show category and list only if there's a match
+        
                         if (hasMatch || filter === '') {
                             category.style.display = '';
                             recipeList.style.display = '';
@@ -50,19 +50,44 @@
                         }
                     });
                 });
-            </script>
+            </script> 
 
-            <div class="category">Breakfast</div>
-              <ul class="recipelist">
-                  <li>Lasagna</li>
-                  <li>Brownie</li>
-              </ul>
 
-            
-            <div class="category">Dessert</div>
-              <ul class="recipelist">
-                <li>Cake</li>
-              </ul>
+
+             <div class="category">Breakfast</div>
+               <ul class="recipelist">
+                   <li>Lasagna</li>
+                   <li>Brownie</li>
+               </ul>
+
+
+             <div class="category">Appetizers</div>
+               <ul class="recipelist">
+
+               </ul>
+
+
+             <div class="category">Sides</div>
+               <ul class="recipelist">
+
+               </ul>
+
+
+             <div class="category">Entrees</div>
+               <ul class="recipelist">
+                   <li><a href="recipes/sweet-potato-casserole.html">Sweet Potato Casserole</a></li>
+               </ul>
+
+             <div class="category">Dessert</div>
+               <ul class="recipelist">
+                   <li></li>
+               </ul>
+
+
+             <div class="category">Beverages</div>
+               <ul class="recipelist">
+
+               </ul>
 
 </body>
 </html>
