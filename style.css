@@ -61,28 +61,36 @@ body {
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.372);
 }
 
-.list {
-    font-size: 1.3rem;
-    list-style-type: none;
-    margin-top: 2rem;
-}
-.list a {
-    text-decoration: none;
-    border: 2px solid rgb(0, 145, 145);
+p {
     color: rgba(144, 61, 165, 0.634);
-    font-family: papyrus, sans-serif, 'Times New Roman';
-    padding: 1rem;
-    
 }
 
-.list li {
-    
-    color: rgb(0, 145, 145);;
-    font-family: papyrus, sans-serif, 'Times New Roman';
-    margin: 1.5rem;
-    
+
+.list.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
 }
 
-.list p {
-    color: rgba(144, 61, 165, 0.634);
+.list.links li {
+  margin: 0;           /* reset margins if needed */
+  list-style: none;    /* no bullet */
+}
+
+.list.links li a {
+  display: inline-flex; /* keep link style */
+  padding: 1rem;
+  border: 2px solid rgb(0, 145, 145);
+  color: rgba(144, 61, 165, 0.634);
+  font-family: papyrus, sans-serif, 'Times New Roman';
+  text-decoration: none;
+}
+
+/* Your existing text list style remains unchanged */
+.list:not(.links) li,
+.list:not(.links) p {
+  margin: 1.5rem 0;
+  color: rgb(0, 145, 145);
+  font-family: papyrus, sans-serif, 'Times New Roman';
 }
