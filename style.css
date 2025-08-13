@@ -76,6 +76,7 @@ p {
 .list.links li {
   margin: 0;           /* reset margins if needed */
   list-style: none;    /* no bullet */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.195);
 }
 
 .list.links li a {
@@ -85,6 +86,7 @@ p {
   color: rgba(144, 61, 165, 0.634);
   font-family: papyrus, sans-serif, 'Times New Roman';
   text-decoration: none;
+  
 }
 
 /* Your existing text list style remains unchanged */
